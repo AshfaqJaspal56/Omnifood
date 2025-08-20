@@ -1,0 +1,278 @@
+/**************************/
+/* BELOW 1200PX (Small desktops) */
+/**************************/
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .grid {
+        column-gap: 5.2rem;
+    }
+
+    nav ul {
+        gap: 3.2rem;
+    }
+
+    .primary-heading {
+        font-size: 4.4rem;
+    }
+    .secondary-heading {
+        font-size: 3.2rem;
+    }
+    .tertiary-heading {
+        font-size: 2.4rem;
+    }
+
+    .meal-content {
+        padding: 3.2rem;
+    }
+
+    .gallery-side {
+        height: 80%;
+    }
+
+    .form {
+        padding: 3.2rem 6.4rem;
+    }
+}
+
+/**************************/
+/* BELOW 976PX (Tablets) */
+/**************************/
+@media (max-width: 61em) {
+    html {
+        font-size: 50%;
+    }
+
+    /* RESPONSIVE NAV  */
+    nav ul {
+        display: none;
+        opacity: 0;
+        transition: all 0.4s;
+    }
+    .open {
+        display: flex;
+        opacity: 1;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: rgba(255, 255, 255, 0.97);
+        position: absolute;
+        top: 0;
+        left: 0;
+        justify-content: center;
+    }
+    .open-btn {
+        display: block !important;
+    }
+    .open-nav-btn {
+        display: block;
+    }
+    .on-scroll {
+        overflow: hidden;
+    }
+
+    .grid {
+        column-gap: 4.8rem;
+    }
+
+    .section-name {
+        font-size: 1.4rem;
+    }
+
+    nav a:link,
+    nav a:visited {
+        font-size: 3rem;
+    }
+    nav .btn,
+    nav .btn:link,
+    nav .btn:visited {
+        font-size: 3rem;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 6.4rem;
+    }
+
+    .hero-img img {
+        width: 60%;
+    }
+
+    .delivered-meals {
+        justify-content: center;
+        gap: 3.2rem;
+        margin-top: 3.2rem;
+    }
+    .delivered-imgs,
+    .delivered-text {
+        width: auto;
+    }
+
+    .featured-imgs img {
+        height: 2.4rem;
+    }
+
+    .how-work-section p.numbering {
+        font-size: 7.4rem;
+    }
+
+    .meal-content {
+        padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+
+    .testimonial-section > div {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-side {
+        height: auto;
+        grid-template-columns: repeat(6, 1fr);
+        padding: 9.8rem 0 1.6rem;
+    }
+
+    .cards-container {
+        padding: 0 8rem;
+    }
+    .price-card {
+        padding: 4.6rem 3.2rem;
+        width: 97%;
+    }
+    .price-card ul {
+        gap: 1.6rem;
+    }
+
+    .cta-container {
+        grid-template-columns: 3fr 2fr;
+    }
+    .cta-section form {
+        grid-template-columns: 1fr;
+        column-gap: 3.2rem;
+        row-gap: 2.4rem;
+    }
+}
+
+/**************************/
+/* BELOW 640PX (Small tablets) */
+/**************************/
+@media (max-width: 40em) {
+    .secondary-heading {
+        margin-bottom: 4.8rem;
+    }
+
+    .main-header {
+        padding: 3.2rem 4.8rem;
+    }
+    .delivered-meals {
+        gap: 1.6rem;
+    }
+    .hero-img img {
+        width: 80%;
+    }
+
+    .featured-imgs img {
+        height: 1.2rem;
+    }
+
+    .steps-container {
+        grid-template-columns: 1fr;
+        column-gap: 6.4rem;
+        row-gap: 3.2rem;
+    }
+    .img-container {
+        margin-bottom: 4.4rem;
+    }
+    .img-container:nth-child(2) {
+        grid-row: 4/5;
+    }
+
+    .meals-section {
+        text-align: center;
+    }
+    .meal-cards {
+        grid-template-columns: 1fr;
+        row-gap: 4.4rem;
+    }
+    .meal-card .title {
+        text-align: start;
+    }
+    .diet-plan {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .testimonial-container {
+        grid-template-columns: 1fr;
+    }
+    .gallery-side {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+        padding: 0 3.2rem;
+        gap: 4.4rem;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-container {
+        grid-template-columns: 1fr;
+    }
+    .form-img {
+        grid-row: 1;
+        height: 50vh;
+    }
+    .form {
+        padding: 3.2rem 4.4rem;
+    }
+
+    footer {
+        grid-template-columns: repeat(6, 1fr);
+        row-gap: 4.8rem;
+    }
+    .footer-div-3,
+    .footer-div-4,
+    .footer-div-5 {
+        grid-row: 1;
+        grid-column: span 2;
+        margin-bottom: 3.2rem;
+    }
+    .footer-div-1,
+    .footer-div-2 {
+        grid-column: span 3;
+    }
+}
+
+/**************************/
+/* BELOW 480PX (Phones) */
+/**************************/
+@media (max-width: 30em) {
+    .btn,
+    .btn:link,
+    .btn:visited {
+        padding: 1.6rem;
+    }
+
+    .delivered-imgs {
+        width: 100%;
+    }
+
+    .pricing-plan {
+        width: 80%;
+    }
+
+    .price-card:last-child::after {
+        top: 5%;
+        right: -20%;
+    }
+
+    .form-img {
+        height: 30vh;
+    }
+}

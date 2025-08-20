@@ -1,0 +1,558 @@
+/**************************/
+/* MAIN HEADER */
+/**************************/
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4.8rem;
+    background-color: #fdf2e9;
+    z-index: 1;
+}
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.logo {
+    height: 2.2rem;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+nav ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 4.8rem;
+    list-style-type: none;
+    transition: all 0.4s;
+}
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    transition: all 0.3s;
+}
+nav a:hover,
+nav a:active {
+    cursor: pointer;
+    color: #c17029;
+}
+nav .btn,
+nav .btn:link,
+nav .btn:visited {
+    padding: 1.2rem 2.4rem;
+}
+
+.open-nav-btn,
+.close-nav-btn {
+    background: transparent;
+    border: none;
+    display: none;
+}
+.open-nav-btn ion-icon,
+.close-nav-btn ion-icon {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: rgb(51, 51, 51);
+}
+
+/**************************/
+/* HERO SECTION */
+/**************************/
+.hero-section {
+    background-color: #fdf2e9;
+}
+.hero {
+    gap: 9.6rem;
+    max-width: 130rem;
+    margin: 0 auto;
+}
+.hero-text > p {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+.hero .hero-btn2:link,
+.hero .hero-btn2:visited {
+    background-color: rgb(255, 255, 255);
+    color: rgb(85, 85, 85);
+    margin-left: 1.6rem;
+}
+.hero .hero-btn2:hover,
+.hero .hero-btn2:active {
+    background: none;
+    box-shadow: inset 3px 3px rgb(255, 255, 255), inset -3px -3px rgb(255, 255, 255);
+}
+.delivered-meals {
+    height: 6.2rem;
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+.delivered-text {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+.delivered-text span {
+    color: rgb(207, 113, 31);
+}
+.delivered-imgs {
+    width: 100%;
+}
+.delivered-imgs img {
+    width: 4.8rem;
+    border-radius: 50%;
+    margin-right: -1.6rem;
+    border: 3px solid rgb(253, 242, 233);
+}
+.hero-img img {
+    width: 100%;
+}
+
+/**************************/
+/* FEATURED IN SECTION */
+/**************************/
+section.featured-section {
+    margin: 0 auto;
+    padding-top: 4.8rem;
+    padding-bottom: 3.2rem;
+}
+.featured-section > p {
+    color: rgb(136, 136, 136);
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+.featured-imgs {
+    display: flex;
+    justify-content: space-around;
+    z-index: -1;
+}
+.featured-imgs img {
+    height: 3.2rem;
+    filter: brightness(0);
+    opacity: 0.5;
+}
+
+/**************************/
+/*  HOW IT WORKS SECTION */
+/**************************/
+.steps-container {
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.how-work-section p.numbering {
+    font-size: 8.6rem;
+    color: rgb(221, 221, 221);
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+.how-work-section p.text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+.img-container {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+.img-container img {
+    display: block;
+    width: 35%;
+    margin: 0 auto;
+}
+.img-container::before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 85%;
+    background-color: #fdf2e9;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -3;
+}
+.img-container::after {
+    content: '';
+    display: block;
+    width: 45%;
+    height: 65%;
+    background-color: #fae5d3;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+/**************************/
+/*  MEALS SECTION */
+/**************************/
+.meals-section {
+    margin-bottom: 4.8rem !important;
+    padding: 9.6rem 0;
+}
+.meal-card {
+    border-radius: 11px;
+    overflow: hidden;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.07);
+    transition: all 0.3s;
+}
+.meal-card:hover {
+    transform: translateY(-10px);
+}
+.meal-cards img {
+    width: 100%;
+}
+.meal-content {
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.tags {
+    margin-bottom: 1.2rem;
+    display: flex;
+    gap: 0.4rem;
+}
+.tag {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #333;
+    border-radius: 100px;
+    font-weight: 600;
+}
+.vegetarian-tag {
+    background-color: #51cf66;
+}
+.vegan-tag {
+    background-color: #94d82d;
+}
+.paleo-tag {
+    background-color: #ffd43b;
+}
+.title {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+}
+strong {
+    font-weight: 500;
+}
+.meal-cards ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.meal-cards li {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    line-height: 1.2;
+}
+ion-icon {
+    color: #e67e22;
+    width: 3rem;
+    height: 3rem;
+}
+.meals-section a {
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    margin-top: 4.4rem;
+    text-align: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.meals-section a:hover {
+    color: rgb(207, 113, 31);
+    border-bottom: 1px solid transparent;
+}
+
+/**************************/
+/*  TESTIMONIAL SECTION */
+/**************************/
+.testimonial-section {
+    background-color: #fdf2e9;
+}
+.testimonial-section > div {
+    align-items: center;
+}
+.testimonial-container {
+    row-gap: 4.8rem;
+    column-gap: 8rem;
+}
+.testimonial-img {
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+}
+.testimonial-txt {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+}
+.testimonial-author {
+    font-size: 1.6rem;
+    color: #6f6f6f;
+}
+.gallery-side {
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.6rem;
+    padding: 1.6rem;
+}
+.gallery-side figure {
+    overflow: hidden;
+}
+.gallery-side img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+}
+.gallery-side img:hover {
+    transform: scale(107%);
+}
+
+/**************************/
+/*  PRICING SECTION */
+/**************************/
+.cards-container {
+    padding: 0 9.6rem;
+}
+.price-card {
+    text-align: center;
+    padding: 4.6rem;
+    border-radius: 11px;
+    width: 95%;
+    border: 2px solid #fdf2e9;
+}
+.price-card:last-child {
+    background-color: #fdf2e9;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+.price-card:last-child::after {
+    content: 'Best value';
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    background-color: #ffd43b;
+    padding: 0.8rem 8rem;
+    position: absolute;
+    top: 6%;
+    right: -17%;
+    transform: rotate(45deg);
+}
+.price-card .title {
+    color: #cf711f;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+}
+.price {
+    font-size: 6.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.6rem;
+}
+.price span {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-right: 0.8rem;
+}
+.price-txt {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #6f6f6f;
+}
+.price-card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 4.4rem 0;
+}
+.price-card li {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    line-height: 1.2;
+}
+/* .price-card ion-icon {
+    color: #e67e22;
+    width: 30px;
+    height: 30px;
+} */
+.pricing-detail-txt {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 4.4rem;
+}
+.features {
+    margin-top: 9.6rem;
+}
+.feature-card ion-icon {
+    color: #e67e22;
+    height: 3.2rem;
+    width: 3.2rem;
+    background-color: #fdf2e9;
+    margin-bottom: 3.2rem;
+    padding: 1.6rem;
+    border-radius: 50%;
+}
+.feature-card .title {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+.feature-card .txt {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+/**************************/
+/*  CTA SECTION */
+/**************************/
+.cta-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-radius: 11px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2.4rem 4.8rem;
+}
+.form {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    color: #45260a;
+    background-color: #e67e22;
+}
+.cta-section .secondary-heading {
+    color: inherit;
+    margin-bottom: 3.2rem;
+}
+.cta-txt {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+.cta-section form {
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+}
+.cta-section label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+.cta-section input,
+.cta-section select {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #fdf2e9;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.cta-section button {
+    background-color: #45260a;
+    color: #fdf2e9;
+    align-self: end;
+    padding: 1.2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 9px;
+    border: none;
+
+    transition: all 0.3s;
+}
+.cta-section button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #555;
+}
+.form-img {
+    filter: brightness(50%);
+    background-image: url(../img/gallery/gallery-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/**************************/
+/*  FOOTER SECTION */
+/**************************/
+footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+    border-top: 1px solid rgb(238, 238, 238);
+}
+.logos {
+    display: flex;
+    gap: 2.4rem;
+    list-style: none;
+    margin: 3.2rem 0 6.4rem;
+}
+.logos ion-icon {
+    display: block;
+    height: 24px;
+    width: 24px;
+    color: #6f6f6f;
+}
+.copyright {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #767676;
+}
+.footer-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+.address {
+    margin-bottom: 2.4rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+.tel {
+    margin-bottom: 1.6rem;
+}
+footer .links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.footer-link:link,
+.footer-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+    line-height: 1.6;
+}
